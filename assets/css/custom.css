@@ -1,0 +1,205 @@
+/* =========================
+   RESET
+========================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+body {
+    scrollbar-width: thin;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.glass {
+    background: rgba(255,255,255,0.9);
+    border-bottom: 1px solid #eee;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* NAVBAR LINK */
+nav a {
+    color: #374151;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+/* HOVER EFFECT */
+nav a:hover {
+    color: #0d47a1;
+    font-weight: 700;
+}
+
+/* ACTIVE LINK */
+nav a.active {
+    color: #0d47a1;
+    font-weight: 700;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero-bg {
+    background: linear-gradient(135deg, #0d47a1, #42a5f5);
+    color: #ffffff;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-modern {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    background: linear-gradient(45deg, #0d47a1, #1976d2);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   CARD
+========================= */
+.card-hover {
+    border-radius: 12px;
+    transition: all 0.25s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   TEXT GRADIENT
+========================= */
+.text-gradient {
+    background: linear-gradient(45deg, #42a5f5, #0d47a1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+}
+
+/* =========================
+   IMAGE
+========================= */
+.img-hover {
+    transition: transform 0.3s ease;
+}
+
+.img-hover:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   GLOBAL TRANSITION
+========================= */
+a,
+button {
+    transition: all 0.2s ease;
+}
+
+/* =========================
+   CHATBOT
+========================= */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.chat-icon {
+    width: 60px;
+    height: 60px;
+    background: #0d47a1;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+
+.chat-icon:hover {
+    transform: scale(1.1);
+}
+
+.chat-box {
+    width: 280px;
+    height: 350px;
+    background: white;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.chat-header {
+    background: #0d47a1;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chat-input {
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    outline: none;
+}

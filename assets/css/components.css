@@ -1,0 +1,55 @@
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: white;
+    border-right: 1px solid #e5e7eb;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 6px;
+    color: #555;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background: #f3f4f6;
+}
+
+.sidebar a.active {
+    background: #e0ecff;
+    color: #003f87;
+    font-weight: 600;
+}
+
+/* TABLE */
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-custom th {
+    background: #f3f4f6;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-custom td {
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+/* FORM */
+.input-custom {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.input-custom:focus {
+    border-color: #003f87;
+    outline: none;
+}
